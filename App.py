@@ -1,6 +1,6 @@
 import nltk
-from nltk.stem import WordNetLemmatizer
-lemsatizer = WordNetLemmatizer()
+#from nltk.stem import WordNetLemmatizer
+#lemsatizer = WordNetLemmatizer()
 import pickle
 import numpy as np
 import os
