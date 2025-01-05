@@ -36,7 +36,7 @@ from tkinter import *
 
 def predict_class(news):
     title_body_tokenized = word_tokenize(news)
-    title_body_tokenized_filtered = [w for w in title_body_tokenized if not w in nltk_stopwords]
+    title_body_tokenized_filtered = [w for w in title_body_tokenized if not w in stopwords]
     title_body_tokenized_filtered_stemming = [stemmer.stem(w) for w in title_body_tokenized_filtered]
     x = [' '.join(title_body_tokenized_filtered_stemming)]
     x_v = v.transform(x)
